@@ -1,23 +1,83 @@
+:root {
+    --background-color: #001f39;
+    --main-color: #144663;
+    --secondary-color: #477191;
+    --text-color: #FFFFFF;
+    --font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    --accent-color:#380900;
+    --highlight-color:#633114;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --border-radius: 8px;
+    --shadow: 0 4px 6px var(--shadow-color);
+    --transition-duration: 0.3s;
+}
+
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 header {
     background-color: black;
-    background-image:url(/assets/img/cartographer.png);
-
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-.navbar p{
+.navbar {
     text-align: end;
-    font-weight: bolder;
+    font-size: small;
+    color: var(--main-color);
 }
 
+.navbar a:hover {
+    opacity: 1;
+    color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-shadow: var(--shadow-color) 2px 2px 4px;
+    margin: 10px;
+}
 
 i {
     font-size: 40px;
     margin: 5px;
+}
+i:hover {
+    color: var(--highlight-color);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 5px;
+}
+
+h6 {
+    font-size: 15px;
+    color: var(--highlight-color);
+    margin: 5px;
+}
+
+p {
+    font-size: 12px;
+    color: var(--text-color);
+    margin: 10px 20px;
 }

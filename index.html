@@ -28,17 +28,18 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75" 
+          style="padding: 0; backdrop-filter: blur(10px); ">
       <div class="container-fluid">
         <a
-          class="navbar-brand"
+          class="navbar-brand d-flex align-items-center"
           href="https://martanpegallo.github.io/CV_MartinPerezGallo/"
           ><img
             src="./assets/img/IMG_0009_Redim.jpg"
-            class="m-1 rounded-circle"
+            class="mx-3 rounded-circle"
             alt="Logo"
           />
-          Martin C. Perez Gallo
+          Version 12.2025
         </a>
         <button
           class="navbar-toggler"
@@ -56,6 +57,7 @@
             <a class="nav-link" href="#Portafolio">Portafolio</a>
             <a class="nav-link" href="#About">Datos personales</a>
             <a class="nav-link" href="#Estudios">Estudios</a>
+            <a class="nav-link" href="#Experiencia">Experiencia</a>
             <a class="nav-link" href="#Habilidades">Habilidades</a>
             <a class="nav-link" href="#Contacto">Contacto</a>
           </div>
@@ -65,7 +67,8 @@
 
     <!-- Header -->
     <header>
-      <div class="container-fluid p-0">
+      <div class="container-fluid p-0" 
+            style="margin-top: 75px; background-image: url('./assets/img/cartographer.png'); background-position: center;">
         <div class="col-12">
           <img
             src="./assets/img/IMG_0004_Redim.jpg"
@@ -74,16 +77,17 @@
           />
         </div>
         <div class="col-12 text-center text-muted">
-          <h1>Fullstack developer</h1>
-          <h2>Especialista en Desarrollo Sostenible y Accesibilidad Universal</h2>
+          <h1>Martin C. Perez Gallo</h1>
+          <h2>Front End developer</h2>
+          <h3>Especialista en Desarrollo Sostenible</h3>
           <br />
         </div>
       </div>
     </header>
 
-    <!-- Secction Main About -->
+    <!-- Seccion Main About -->
     <main id="About">
-      <div class="container-fluid text-center p-0">
+      <div class="container-fluid text-center p-3 bg-dark text-light">
         <div class="text-bg-light p-3">
           <h3 class="fw-bold">Datos personales</h3>
           <ul class="list-group list-group-flush">
@@ -100,8 +104,10 @@
       </div>
     </main>
 
-    <!-- Section estudios -->
-    <section id="Estudios" class="text-center bg-dark">
+    <!-- Seccion estudios -->
+    <section 
+      id="Estudios" 
+      class="text-center bg-dark">
       <div class="container-fluid p-0">
         <div>
           <h3 class="text-light py-2 fw-bold">Estudios academicos</h3>
@@ -112,11 +118,11 @@
             style="width: 18rem"
           >
             <div class="card-body">
-              <h5 class="card-title">Fullstack Developer</h5>
-              <h6 class="card-subtitle mb-2 text-primary">
+              <h5 class="card-title">Front End Developer</h5>
+              <h6 class="card-subtitle mb-2">
                 2025 Desafio Latam
               </h6>
-              <p class="card-text">Estudios de desarrollador FullStack</p>
+              <p class="card-text">HTML / CSS / JavaScript / React</p>
             </div>
           </div>
           <div
@@ -125,7 +131,7 @@
           >
             <div class="card-body">
               <h5 class="card-title">Mg. Administracion y Gestion Ambiental</h5>
-              <h6 class="card-subtitle mb-2 text-primary">
+              <h6 class="card-subtitle mb-2">
                 2017 - 2020 U. Arturo Prat
               </h6>
               <p class="card-text">Postgrado Universidad Arturo Prat UNAP</p>
@@ -137,17 +143,73 @@
           >
             <div class="card-body">
               <h5 class="card-title">Ingenieria en Sonido</h5>
-              <h6 class="card-subtitle mb-2 text-primary">2000 - 2007 UDLA</h6>
+              <h6 class="card-subtitle mb-2">2000 - 2007 UDLA</h6>
               <p class="card-text">
                 Titulo universitario Universidad de las Americas UDLA
               </p>
+            </div>
+          </div>
+          <div
+            class="card row-cols-auto text-bg-secondary my-2"
+            style="width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Otros estudios</h5>
+              <p class="card-text">
+                2019 - Curso aplicacion norma ISO 19001 de gestion ambiental </p>
+                <p class="card-text">  
+                2012 - Curso de gestion y elaboracion de proyecto y planes de negocios Sercotec </p>
+                <p class="card-text">
+                2010 - Curso de fotografia digital y edicion de imagenes </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Secction habilidades -->
+    <!-- Seccion experiencia laboral -->
+    <section
+      id="Experiencia"
+      class="container-fluid text-center bg-light text-dark"
+    > 
+      <div>
+        <h3 class="fw-bold p-2">Experiencia Laboral</h3>
+      </div>
+      <div class="row justify-content-around">
+        <div
+          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
+        >
+          <h4>Desarrollador Web Freelance</h4>
+          <p>2023 - Presente</p>
+          <p>
+            Desarrollo de sitios web personalizados para clientes, utilizando HTML, CSS y JavaScript.
+          </p>
+        </div>
+        <div
+          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
+        >
+          <h4>Consultor en Sostenibilidad</h4>
+          <p>2020 - 2023</p>
+          <p>
+            Asesoramiento a empresas en la implementación de prácticas sostenibles y desarrollo de informes de sostenibilidad.
+          </p>
+        </div>
+        <div
+          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
+        >
+          <h4>Especialista en Accesibilidad Web</h4>
+          <p>2017 - 2020</p>
+          <p>
+            Implementación de estándares de accesibilidad en sitios web para mejorar la experiencia del usuario.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Seccion habilidades -->
     <section
       id="Habilidades"
       class="container-fluid text-center bg-light text-dark"
@@ -157,7 +219,8 @@
       </div>
       <div class="row justify-content-around">
         <div
-          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          class="col-8 col-md-3 m-1 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
         >
           <i class="fa-solid fa-language"></i>
           <h4>Idiomas</h4>
@@ -165,21 +228,24 @@
           <p>Portugues - Basico</p>
         </div>
         <div
-          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          class="col-8 col-md-3 m-1 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
         >
           <i class="fa-solid fa-leaf"></i>
           <h4>Desarrollo Sostenible</h4>
           <p> Conocimientos en economia sostenible, eficiencia energetica y analisis de ciclo de vida</p>
         </div>
         <div
-          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          class="col-8 col-md-3 m-1 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
         >
           <i class="fa-solid fa-wheelchair-move"></i>
           <h4>Accesibilidad Universal</h4>
           <p>Enfasis en el diseño accesible y responsivo</p>
         </div>
         <div
-          class="col-8 col-md-4 m-2 border border-2 rounded border-secondary"
+          class="col-8 col-md-3 m-1 border border-2 rounded border-secondary"
+          style="background-color: var(--secondary-color);"
         >
           <i class="fa-solid fa-camera-retro"></i>
           <h4>Fotografia</h4>
@@ -188,8 +254,10 @@
       </div>
     </section>
 
-    <!-- section Portafolio -->
-    <div id="Portafolio" class="text-light py-3 fw-bold text-center">
+    <!-- seccion Portafolio -->
+    <div 
+      id="Portafolio" 
+      class="text-light py-3 fw-bold text-center">
       <h3>Portafolio</h3>
     </div>
     <div
@@ -276,7 +344,7 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- Section contacto -->
+    <!-- Seccion contacto -->
     <section
       id="Contacto"
       class="container my-3 p-1 rounded bg-light text-dark"
@@ -304,13 +372,24 @@
         <div
           class="col-12 col-md-6 d-flex justify-content-center align-items-center"
         >
-          <i class="fa-solid fa-circle-user"></i>
+        <i class="fa-brands fa-linkedin"></i>
           <a
             href="https://www.linkedin.com/in/martinc-perezgallo/"
             target="_blank"
-            >Linkedin</a
+            ></a
           >
         </div>
+        <div
+          class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+        >
+        <i class="fa-brands fa-github"></i>
+          <a
+            href="https://github.com/martanpegallo"
+            target="_blank"
+            ></a
+          >
+        </div>
+        
       </div>
       <form>
         <div class="form-group m-4">
@@ -335,9 +414,27 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-muted p-2">
+    <footer
+      id="footer" 
+      class="bg-dark text-center text-muted p-2">
       <p>© 2025 Todos los derechos reservados</p>
     </footer>
+
+    <script> src="./assets/js/script.js" </script>
+    <script>  
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+        const navbarCollapse = document.getElementById("navbarNavAltMarkup");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            if (navbarCollapse.classList.contains("show")) {
+              new bootstrap.Collapse(navbarCollapse).toggle();
+            }
+          });
+        });
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
